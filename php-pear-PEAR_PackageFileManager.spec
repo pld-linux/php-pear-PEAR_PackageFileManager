@@ -1,17 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          PEAR
 %define         _subclass       PackageFileManager
-%define		_status		alpha
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - takes an existing package.xml file and updates it with a new filelist and changelog
 Summary(pl):	%{_pearname} - aktualizacja package.xml (dodanie nowej listy plików oraz listy zmian)
 Name:		php-pear-%{_pearname}
-Version:	0.10
+Version:	0.11
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	ce5a12e5a3ab34507ba17b270f13c4b2
+# Source0-md5:	c3d8f450d2a14b982f28c50fe143b4fc
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
