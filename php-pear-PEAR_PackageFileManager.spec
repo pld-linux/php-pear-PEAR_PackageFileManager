@@ -39,7 +39,7 @@ Features include:
   package.xml from any directory
 - can specify a different name for the package.xml file
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Ten pakiet rewolucjonizuje zarz±dzanie pakietami PEAR. Za pomoc± kilku
