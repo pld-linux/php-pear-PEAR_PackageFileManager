@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          PEAR
-%define         _subclass       PackageFileManager
+%define		_class		PEAR
+%define		_subclass	PackageFileManager
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
