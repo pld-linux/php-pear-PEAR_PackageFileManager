@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - takes an existing package.xml file and updates it with a new filelist and changelog
 Summary(pl):	%{_pearname} - aktualizacja package.xml (dodanie nowej listy plików oraz listy zmian)
 Name:		php-pear-%{_pearname}
-Version:	1.5.1
-Release:	1.1
+Version:	1.5.2
+Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	528e4105e9948cfa77930d4668229fb0
+# Source0-md5:	76b2b2f9c3491e451caf11adebf04df6
 URL:		http://pear.php.net/package/PEAR_PackageFileManager/
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
@@ -83,6 +83,11 @@ install -d $RPM_BUILD_ROOT%{php_pear_dir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+if [ -f %{_docdir}/%{name}-%{version}/optional-packages.txt ]; then
+	cat %{_docdir}/%{name}-%{version}/optional-packages.txt
+fi
 
 %files
 %defattr(644,root,root,755)
