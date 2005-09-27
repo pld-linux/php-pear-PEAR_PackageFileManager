@@ -68,7 +68,7 @@ Ta klasa ma w PEAR status: %{_status}.
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
 Group:		Development
-Requires:	%{name} = %{version}-%{release}
+Requires:	%{name} = %{epoch}:%{name}-%{release}
 
 %description tests
 Tests for PEAR::%{_pearname}.
