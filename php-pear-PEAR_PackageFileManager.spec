@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - aktualizacja package.xml (dodanie nowej listy plików
 Name:		php-pear-%{_pearname}
 Version:	1.5.2
 Release:	2
+Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
