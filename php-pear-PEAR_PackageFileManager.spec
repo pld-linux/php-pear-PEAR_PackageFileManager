@@ -15,6 +15,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	76b2b2f9c3491e451caf11adebf04df6
 URL:		http://pear.php.net/package/PEAR_PackageFileManager/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-PEAR >= 1:1.1
