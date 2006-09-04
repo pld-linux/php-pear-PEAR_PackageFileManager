@@ -1,19 +1,19 @@
 %include	/usr/lib/rpm/macros.php
 %define		_class		PEAR
 %define		_subclass	PackageFileManager
-%define		_status		stable
+%define		_status		beta
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - takes an existing package.xml file and updates it with a new filelist and changelog
 Summary(pl):	%{_pearname} - aktualizacja package.xml (dodanie nowej listy plików oraz listy zmian)
 Name:		php-pear-%{_pearname}
-Version:	1.5.3
-Release:	1
+Version:	1.6.0
+Release:	0.b4.1
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	8310e9e7ea58333aff6f77c0a4853de1
+Source0:	http://pear.php.net/get/%{_pearname}-%{version}b4.tgz
+# Source0-md5:	44906cc9721b07e900dfdb7d873c7b3c
 URL:		http://pear.php.net/package/PEAR_PackageFileManager/
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -94,14 +94,9 @@ install -d $RPM_BUILD_ROOT%{php_pear_dir}
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post
-if [ -f %{_docdir}/%{name}-%{version}/optional-packages.txt ]; then
-	cat %{_docdir}/%{name}-%{version}/optional-packages.txt
-fi
-
 %files
 %defattr(644,root,root,755)
-%doc install.log optional-packages.txt
+%doc install.log
 %doc docs/%{_pearname}/examples
 %{php_pear_dir}/.registry/*.reg
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
