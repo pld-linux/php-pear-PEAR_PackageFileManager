@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - takes an existing package.xml file and updates it with a new filelist and changelog
-Summary(pl):	%{_pearname} - aktualizacja package.xml (dodanie nowej listy plików oraz listy zmian)
+Summary(pl.UTF-8):   %{_pearname} - aktualizacja package.xml (dodanie nowej listy plikÃ³w oraz listy zmian)
 Name:		php-pear-%{_pearname}
 Version:	1.6.0
 Release:	0.b4.1
@@ -47,31 +47,31 @@ Features include:
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Ten pakiet rewolucjonizuje zarz±dzanie pakietami PEAR. Za pomoc± kilku
-parametrów mo¿liwe jest automatyczne zaktualizowanie package.xml o
-listê plików danego pakietu.
+%description -l pl.UTF-8
+Ten pakiet rewolucjonizuje zarzÄ…dzanie pakietami PEAR. Za pomocÄ… kilku
+parametrÃ³w moÅ¼liwe jest automatyczne zaktualizowanie package.xml o
+listÄ™ plikÃ³w danego pakietu.
 
-Mo¿liwo¶ci pakietu:
-- wczytuje istniej±cy plik package.xml i zmienia w nim tylko
+MoÅ¼liwoÅ›ci pakietu:
+- wczytuje istniejÄ…cy plik package.xml i zmienia w nim tylko
   release/changelog
-- system wtyczek s³u¿±cych do skompletowania listy plików w katalogu.
-  Aktualnie istniej± dwie takie wtyczki - jedna do standardowego
-  rekursywnego przegl±dania katalogów, druga do odczytu do generowania
-  listy plików na podstawie CVS/Entries.
-- niesamowicie elastyczne opcje do okre¶lania roli podczas instalacji
-  dla plików/katalogów [FIXME?]
-- mo¿liwo¶æ ignorowania plików na podstawie wildcardów * ?
-- mo¿liwo¶æ do zarz±dzania zale¿no¶ciami
-- mo¿liwo¶æ zapisu pliku package.xml do dowolnego katalogu oraz
+- system wtyczek sÅ‚uÅ¼Ä…cych do skompletowania listy plikÃ³w w katalogu.
+  Aktualnie istniejÄ… dwie takie wtyczki - jedna do standardowego
+  rekursywnego przeglÄ…dania katalogÃ³w, druga do odczytu do generowania
+  listy plikÃ³w na podstawie CVS/Entries.
+- niesamowicie elastyczne opcje do okreÅ›lania roli podczas instalacji
+  dla plikÃ³w/katalogÃ³w [FIXME?]
+- moÅ¼liwoÅ›Ä‡ ignorowania plikÃ³w na podstawie wildcardÃ³w * ?
+- moÅ¼liwoÅ›Ä‡ do zarzÄ…dzania zaleÅ¼noÅ›ciami
+- moÅ¼liwoÅ›Ä‡ zapisu pliku package.xml do dowolnego katalogu oraz
   odczytu tego pliku z dowolnego katalogu
-- mo¿na okre¶liæ dla pliku package.xml inn± nazwê
+- moÅ¼na okreÅ›liÄ‡ dla pliku package.xml innÄ… nazwÄ™
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -80,7 +80,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
