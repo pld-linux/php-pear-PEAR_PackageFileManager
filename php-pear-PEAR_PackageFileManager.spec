@@ -8,7 +8,7 @@ Summary:	%{_pearname} - takes an existing package.xml file and updates it with a
 Summary(pl.UTF-8):	%{_pearname} - aktualizacja package.xml (dodanie nowej listy plików oraz listy zmian)
 Name:		php-pear-%{_pearname}
 Version:	1.6.3
-Release:	1
+Release:	2
 Epoch:		0
 License:	PHP 2.02
 Group:		Development/Languages/PHP
